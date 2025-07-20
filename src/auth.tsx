@@ -1,9 +1,9 @@
-// src/Auth.tsx
+// src/auth.tsx
 import React from 'react';
 import { auth, googleProvider } from './firebase';
 import { signInWithPopup, signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Button } from '@/components/ui/button';
+import { Button } from './components/ui/button'; // E'tibor bering: to'g'ri import qilingan
 
 export default function Auth() {
   const [user] = useAuthState(auth);
